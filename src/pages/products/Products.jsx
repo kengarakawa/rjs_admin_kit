@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react"
+import Swal from "sweetalert2"
 
 import BackendLayout from "../../components/layouts/backend/BackendLayout"
 import api from "../../services/productAPI"
+
+
 
 const Products = () => {
   const [products, setProducts] = useState([])
@@ -11,6 +14,32 @@ const Products = () => {
       setProducts(res.data)
     )
   }, [])
+
+
+
+  const deleteButtonHandler = (id) => {
+
+    Swal.fire({
+      title: 'Do you want to delete product#' + id + '?',
+      icon : 'warning' , 
+      showDenyButton: true,
+      // showCancelButton: true,
+      confirmButtonText: `Yes`,
+      denyButtonText: `No`,
+      customClass: {
+        // cancelButton: 'order-1 right-gap',
+        confirmButton: 'order-2',
+        denyButton: 'order-3',
+      } 
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire('Saved!', '', 'success')
+      } else if (result.isDenied) {
+        Swal.fire('Changes are not saved', '', 'info')
+      }
+    })
+    
+  }
 
   return (
     <BackendLayout title="Product List">
@@ -46,9 +75,9 @@ const Products = () => {
                         <td>{product.product_price}</td>
                         <td>{product.product_qty}</td>
                         <td>
-                          <a className="btn btn-sm btn-warning">Edit</a>
+                          <button className="btn btn-sm btn-warning">Edit</button>
                           &nbsp;&nbsp;
-                          <a className="btn btn-sm btn-danger">Delete</a>
+                          <button className="btn btn-sm btn-danger" onClick={() => deleteButtonHandler(product.id)} >Delete</button>
                         </td>
                       </tr>
                     ))}
