@@ -35,8 +35,15 @@ const Sidebar = () => {
                 <li className="sidebar-item">
                   {/* <a className="sidebar-link" href="#" to="/dashboard/products"> */}
                       <NavLink className="sidebar-link" to="/backend/products">
+                      
                     Product
                     </NavLink>
+
+                    <NavLink className="sidebar-link" to="/backend/productthumbnails">
+                      
+                      ThumbProduct
+                      </NavLink>
+  
                   {/* </a> */}
                 </li>
                 <li className="sidebar-item">
