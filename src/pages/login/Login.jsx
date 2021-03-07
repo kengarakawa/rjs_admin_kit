@@ -48,8 +48,11 @@ const Login = () => {
                     // ส่งไปหน้า Backend / Dashboard
                        // history.push('/backend/dashboard') 
                        // history.push('/#/backend/dashboard') 
-                       window.location = 'https://kengarakawa.github.io/rjs_admin_kit/#/backend/dashboard'
+                       const url = 'https://kengarakawa.github.io/rjs_admin_kit/#/backend/dashboard'
+                       console.log(url)
+                       window.location = url
                        localStorage.setItem('fullName' , 'Some User!')
+                       
                     
                 }
             })
