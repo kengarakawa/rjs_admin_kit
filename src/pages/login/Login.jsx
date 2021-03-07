@@ -23,6 +23,7 @@ const Login = () => {
 
 
         if(username ==='admin' && password === 'password') {
+            const url = 'https://kengarakawa.github.io/rjs_admin_kit/#/backend/dashboard'
             let timerInterval
             Swal.fire({
                 html: 'กำลังเข้าสู่ระบบ <b></b>',
@@ -48,7 +49,7 @@ const Login = () => {
                     // ส่งไปหน้า Backend / Dashboard
                        // history.push('/backend/dashboard') 
                        // history.push('/#/backend/dashboard') 
-                       const url = 'https://kengarakawa.github.io/rjs_admin_kit/#/backend/dashboard'
+                       
                        console.log(url)
                        window.location = url
                        localStorage.setItem('fullName' , 'Some User!')
