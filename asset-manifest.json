@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kengarakawa/rjs_admin_kit/static/css/main.276e04cd.chunk.css",
+    "main.js": "/kengarakawa/rjs_admin_kit/static/js/main.b4822d48.chunk.js",
+    "main.js.map": "/kengarakawa/rjs_admin_kit/static/js/main.b4822d48.chunk.js.map",
+    "runtime-main.js": "/kengarakawa/rjs_admin_kit/static/js/runtime-main.263c8435.js",
+    "runtime-main.js.map": "/kengarakawa/rjs_admin_kit/static/js/runtime-main.263c8435.js.map",
+    "static/js/2.0cff4eee.chunk.js": "/kengarakawa/rjs_admin_kit/static/js/2.0cff4eee.chunk.js",
+    "static/js/2.0cff4eee.chunk.js.map": "/kengarakawa/rjs_admin_kit/static/js/2.0cff4eee.chunk.js.map",
+    "index.html": "/kengarakawa/rjs_admin_kit/index.html",
+    "static/css/main.276e04cd.chunk.css.map": "/kengarakawa/rjs_admin_kit/static/css/main.276e04cd.chunk.css.map",
+    "static/js/2.0cff4eee.chunk.js.LICENSE.txt": "/kengarakawa/rjs_admin_kit/static/js/2.0cff4eee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.263c8435.js",
+    "static/js/2.0cff4eee.chunk.js",
+    "static/css/main.276e04cd.chunk.css",
+    "static/js/main.b4822d48.chunk.js"
+  ]
+}
