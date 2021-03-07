@@ -9,7 +9,7 @@ const NavBar = () => {
 
   const logout = () => {
     localStorage.removeItem('fullName')
-    history.push('/login')
+    history.push('/#/login')
 
   }
 

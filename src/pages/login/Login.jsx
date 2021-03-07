@@ -46,7 +46,8 @@ const Login = () => {
             }).then((result) => {
                 if (result.dismiss === Swal.DismissReason.timer) {
                     // ส่งไปหน้า Backend / Dashboard
-                       history.push('/backend/dashboard') 
+                       // history.push('/backend/dashboard') 
+                       history.push('/#/backend/dashboard') 
                        localStorage.setItem('fullName' , 'Some User!')
                     
                 }

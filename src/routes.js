@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { HashRouter, Route, Switch } from "react-router-dom"
 import Dashboard from "./pages/dashboard/Dashboard"
 import ForgotPassword from "./pages/forgot_password/ForgotPassword"
 import Login from "./pages/login/Login"
@@ -11,7 +11,7 @@ import Register from "./pages/register/Register"
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <HashRouter basename={'/rjs_admin_kit'}>
       <Switch>
         {/* <Route path="/" exact={true} component={"Home"} /> */}
         <Route path="/" exact="true" component={Login} />
@@ -28,7 +28,7 @@ const Routes = () => {
 
         <Route component={PageNotFound} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 export default Routes
