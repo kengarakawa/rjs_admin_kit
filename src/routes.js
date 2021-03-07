@@ -14,7 +14,7 @@ const Routes = () => {
     <HashRouter basename={'/rjs_admin_kit'}>
       <Switch>
         {/* <Route path="/" exact={true} component={"Home"} /> */}
-        <Route path="/" exact="true" component={Login} />
+        <Route path="/" exact={true} component={Login} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/forgotpassword" component={ForgotPassword} />

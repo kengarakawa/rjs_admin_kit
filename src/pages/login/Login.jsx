@@ -47,7 +47,8 @@ const Login = () => {
                 if (result.dismiss === Swal.DismissReason.timer) {
                     // ส่งไปหน้า Backend / Dashboard
                        // history.push('/backend/dashboard') 
-                       history.push('/#/backend/dashboard') 
+                       // history.push('/#/backend/dashboard') 
+                       window.location = 'https://kengarakawa.github.io/rjs_admin_kit/#/backend/dashboard'
                        localStorage.setItem('fullName' , 'Some User!')
                     
                 }
